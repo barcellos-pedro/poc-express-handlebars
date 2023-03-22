@@ -6,7 +6,7 @@ app.use("/", homeRoutes);
 app.use("/names", namesRoutes);
 app.get("/home", (_, res) => res.redirect("/"));
 app.get("/form", (_, res) => res.render("form"));
-app.post("/upload", (_, res) => res.json(req.body));
+app.post("/upload", (req, res) => res.json(req.body));
 app.get("/download-database", (_, res) => res.download("db.db"));
 
 app.listen(PORT, () =>
