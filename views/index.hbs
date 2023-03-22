@@ -1,0 +1,58 @@
+<h1>{{title}}</h1>
+
+<h2>Info</h2>
+
+<p>
+  Name
+  {{#with info}}
+    {{upperCase name}}
+  {{/with}}
+</p>
+
+<p>Age: {{info.age}}</p>
+
+<p>
+  Status
+  {{#if info.status}}
+    OK
+  {{else}}
+    Pending
+  {{/if}}
+</p>
+
+<hr />
+
+<h3>Pages</h3>
+
+<ul>
+  <li>
+    <a href="/todos">Todos</a>
+  </li>
+  <li>
+    <a href="/names">Names</a>
+  </li>
+  <li>
+    <a href="/names.json">Names (JSON)</a>
+  </li>
+  <li>
+    <a href="/form">Form</a>
+  </li>
+  <li>
+    <a href="/about">About</a>
+  </li>
+  <li>
+    <a href="/download-database" download="database.db">
+      Download databse (sqlite) file
+    </a>
+  </li>
+</ul>
+
+<hr />
+
+<h4>Visits Count</h4>
+
+{{#if visits}}
+  <p>Site visitors:{{visits}}</p>
+{{else}}
+  <p>You are the first to visit our website! 🎉</p>
+{{/if}}
