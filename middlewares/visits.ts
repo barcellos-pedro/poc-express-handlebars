@@ -1,4 +1,5 @@
-export function visitsCounter(req, res, next) {
+import { Request, Response, NextFunction } from "express";
+export function visitsCounter(req: Request, res: Response, next: NextFunction) {
   // we can clear the cookies
   // res.clearCookie('visits')
 

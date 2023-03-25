@@ -1,15 +1,15 @@
-import express from "express";
+import express, { Application } from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import { create } from "express-handlebars";
 
-import helpers from "../lib/helpers.js";
-import { visitsCounter } from "../middlewares/visits.js";
+import helpers from "../../lib/helpers";
+import { visitsCounter } from "../../middlewares/visits";
 
 dotenv.config();
 
-const PORT = process.env.PORT || 8000;
-const app = express();
+const PORT = process.env.PORT || 3000;
+const app: Application = express();
 const hbs = create({
   extname: ".hbs",
   helpers,

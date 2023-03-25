@@ -6,7 +6,7 @@ This project was made to expose me to how to set up a server and deploy a web ap
 
 Going through this process I learned valuable concepts and ideas about the development process beyond localhost.
 
-During the journey, I had to choose cloud providers, server plans, git, remote access to the server through ssh, process managers, environments, etc.
+During the journey, I had to choose cloud providers, domains, server plans, git, remote access to the server through ssh, process managers, environments, etc.
 
 # Tech
 - Nodejs

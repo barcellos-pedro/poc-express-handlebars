@@ -1,10 +1,9 @@
-import express from "express";
+import express, { Request, Response, Router } from "express";
 
-const router = express.Router();
+const router: Router = express.Router();
 
-router.get("/", (req, res) => {
+router.get("/", (req: Request, res: Response) => {
   const data = {
-    names: ["ana", "pedro"],
     info: { name: "Pedro", age: 26, status: true },
   };
 

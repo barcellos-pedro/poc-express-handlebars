@@ -1,12 +1,8 @@
 const helpers = {
-  upperCase(value) {
-    if (typeof value !== "string") {
-      return value;
-    }
-
+  upperCase(value: string): string {
     return value.toUpperCase();
   },
-  json(value) {
+  json(value: object): string {
     return JSON.stringify(value, null, 2);
   },
 };

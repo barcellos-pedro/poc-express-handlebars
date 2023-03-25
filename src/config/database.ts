@@ -1,6 +1,6 @@
-import sqlite3 from "sqlite3";
+import sqlite3, { Database } from "sqlite3";
 
-const Database = new sqlite3.Database("./db.db", (err) => {
+const db: Database = new sqlite3.Database("./db.db", (err) => {
   if (err) {
     console.error(err);
     process.exit(1);
@@ -8,12 +8,12 @@ const Database = new sqlite3.Database("./db.db", (err) => {
   console.log("Connected to the database");
 });
 
-export default Database;
+export default db;
 
 // Query Examples
 
 // CREATE TABLE
-// Database.run("CREATE TABLE names(name text)", (err) => {
+// db.run("CREATE TABLE names(name text)", (err) => {
 //   if (err) {
 //     return console.error(err);
 //   }
@@ -21,15 +21,15 @@ export default Database;
 // });
 
 // INSERT
-// Database.run("INSERT INTO names (name) VALUES (?)", ["bob"], (err) => {
+// db.run("INSERT INTO names (name) VALUES (?)", ["jack"], (err) => {
 //   if (err) {
 //     return console.error(err);
 //   }
-//   console.log("record created!\n", this);
+//   console.log("record created!");
 // });
 
 // SELECT
-// Database.each("SELECT * FROM names", [], (err, row) => {
+// db.each("SELECT * FROM names", [], (err, row) => {
 //   if (err) {
 //     return console.error(err);
 //   }
