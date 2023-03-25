@@ -18,11 +18,13 @@ During the journey, I had to choose cloud providers, domains, server plans, git,
 - Digitalocean Droplet (Server)
 - Nginx (Web server)
 - PM2 (Process Manager)
+- New Relic (Observability)
 
 # Docs
 - [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets)
 - [Nginx config](https://www.digitalocean.com/community/tools/nginx)
 - [PM2 docs](https://pm2.keymetrics.io/docs/usage/quick-start/)
+- [New Relic docs](https://docs.newrelic.com/docs/infrastructure/host-integrations/installation/new-relic-guided-install-overview/)
 
 # Bônus
 - [Artillery (App load testing)](https://www.artillery.io/)
