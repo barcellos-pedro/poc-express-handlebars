@@ -24,6 +24,9 @@ During the journey, I had to choose cloud providers, domains, server plans, git,
 - [Nginx config](https://www.digitalocean.com/community/tools/nginx)
 - [PM2 docs](https://pm2.keymetrics.io/docs/usage/quick-start/)
 
+# Bônus
+- [Artillery (App load testing)](https://www.artillery.io/)
+
 *Nginx config page already includes the step below*
 
 To obtain Free SSL certificate from Let's Encrypt checkout [Certbot](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal)
